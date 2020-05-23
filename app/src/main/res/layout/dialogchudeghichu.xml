@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nội dung ghi chú"
+        android:textSize="40px" />
+
+    <EditText
+
+        android:id="@+id/txtChuDeGhiChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập chủ đề..." />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:minHeight="200px"
+        android:hint="Nhập nội dung..."
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:gravity="top"
+        android:maxLines="4" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnLuuDuLieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="luuChuDe"
+                android:text="Lưu chủ đề" />
+
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hủy chủ đề" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
